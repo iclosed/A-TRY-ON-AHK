@@ -25,7 +25,11 @@
 可以使用 Run 命令来其中程序, 文档, URL 或快捷方式。例如：
 
 >Run Notepad
+
 Run C:\My Documents\Address List.doc
+
 Run C:\My Documents\My Shortcut.lnk
+
 Run www.yahoo.com
-Run mailto:someone@somedomain.com
+
+>Run mailto:someone@somedomain.com
