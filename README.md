@@ -6,7 +6,6 @@
 这是一款基于AutoIt开源代码开发的脚本语言，添加了更多实用的特性<del>，是居家旅行必备的好帮手</del>。	
 
 >特别感谢 Jonathan Bennett，他于 1999 年把 AutoIt v2 作为自由软件慷慨地发布出来，使其成为我以及世界上其他许多人节省时间的工具。此外，AutoHotkey 中许多针对 AutoIt v2 命令集的增强功能以及 Window Spy 和旧的脚本编译器都是直接改写自 AutoIt v3 源代码。所以为此同样感谢 Jon 和 AutoIt 的其他开发人员。
-
 >最后，AutoHotkey 离开了这些人也不会有今天。
 
 >~ Chris Mallett
@@ -30,8 +29,6 @@
 可以使用 Run 命令来其中程序, 文档, URL 或快捷方式。例如：
 
 >Run Notepad
-
 >Run C:\My Documents\Address List.doc
-
 >Run www.baidu.com
 
