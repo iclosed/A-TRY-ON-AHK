@@ -18,3 +18,14 @@
 
 不过, 在不包含热键和热字串时, 脚本会在启动后从上往下按顺序执行其中的命令。
 
+安装了AutoHotKey环境可以直接运行脚本文件*.ahk，也可以编译成exe文件在各种Windows平台下直接运行。
+
+## 0x01 Run命令
+
+可以使用 Run 命令来其中程序, 文档, URL 或快捷方式。例如：
+
+>Run Notepad
+Run C:\My Documents\Address List.doc
+Run C:\My Documents\My Shortcut.lnk
+Run www.yahoo.com
+Run mailto:someone@somedomain.com
