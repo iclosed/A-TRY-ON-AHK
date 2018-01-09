@@ -30,11 +30,11 @@
 
 可以使用 Run 命令来其中程序, 文档, URL 或快捷方式。例如：
 
->Run Notepad
+	Run Notepad
 
->Run C:\My Documents\Address List.doc
+	Run C:\My Documents\Address List.doc
 
->Run www.baidu.com
+	Run www.baidu.com
 
 ## 0x02 程序执行方式
 
@@ -58,11 +58,9 @@
 
 调试脚本： 
 
-```
-ListVars
+	ListVars
+	Pause
 
-Pause
-```
 当脚本执行到这两行时, 会显示所有变量当前包含的内容供您检查. 
 
 当您准备恢复时, 可以通过 File 或托盘菜单取消暂停. 然后脚本会继续执行，
