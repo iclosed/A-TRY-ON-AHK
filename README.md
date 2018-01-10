@@ -354,5 +354,67 @@ OutputVarWin这个可选的参数是用来保存鼠标光标下窗口的 唯一 
 	
 	#InstallKeybdHook
 
+### Send / SendRaw (Keys):
+
+Keys表见 **0x11
+
+SendRaw: 会原样发送所有字符, 而不把 {Enter} 转换成 ENTER 键击, 把 ^c 转换成 Control-C, 等等. 不过, 转义系列, 变量引用和表达式的一般规则仍然适用, 因为它们在命令执行前就已经被处理了. 要在 SendInput、SendPlay 或 SendEvent 中使用原始模式，请把 {Raw} 写在需发送的按键序列前面；例如：SendInput {Raw}abc。
+
+Send: 不处于原始模式时, 下列字符被看成是修饰键 (这些修饰键仅影响紧跟着的下一个键):
+
+>!: 发送 ALT 键击. 例如，Send This is text!a 将发送按键序列“This is text”并接着按下 ALT+a。注: 在某些程序中 !A 和 !a 会产生不同的效果. 这是由于 !A 按了 ALT+SHIFT+A 而 !a 按了 ALT+a. 如果不确定, 请使用小写字母.
+
+>+: 发送 SHIFT 键击. 例如，Send +abC 会发送文本“AbC”，而 Send !+a 会按下 ALT+SHIFT+a。
+
+>^: 发送 CONTROL 键击. 例如，Send ^!a 会按下 CTRL+ALT+a，而 Send ^{Home} 则发送 CONTROL+HOME。注: 在某些程序中 ^A 和 ^a 会产生不同的效果. 这是由于 ^A 按了 CONTROL+SHIFT+A 而 ^a 按了 CONTROL+a. 如果不确定, 请使用小写字母.
+
+>#：发送 WIN 键击，因此 Send #e 会在按住 Windows 键时按下字母“e”。
+
+### SendInput / SendPlay (Keys):
+
+SendInput 和 SendPlay 与 Send 使用相同的语法但通常更快更可靠. 此外, 它们缓存了发送期间任何物理的键盘或鼠标活动, 这样避免了在发送时夹杂用户的键击. 可以使用 SendMode 让 Send 和 SendInput 或 SendPlay 执行相同的功能 
+
+### 重复键击:
+
+把需要重复的按键名称和重复次数写入到大括号中. 例如：
+
+	Send {DEL 4}  ; 按 4 次 Delete 键.
+	Send {S 30}   ; 发送 30 次大写字母 S.
+	Send +{TAB 4}  ; 按 4 次 Shift-Tab.
+
+### 按住或释放按键:
+
+把按键名称和单词 Down 或 Up 写入到大括号中. 例如：
+
+	Send {b down}{b up}
+	Send {TAB down}{TAB up}
+	Send {Up down}  ; 按下向上键.
+	Sleep 1000  ; 按住 1 秒.
+	Send {Up up}  ; 释放向上键.
+
+## 0x0A 窗口管理
 
 
+
+## 0x0B 屏幕管理
+
+
+
+## 0x0C 文件管理 	
+	
+
+
+## 0x0D GUI绘制	
+
+
+
+## 0x0E 声音管理
+
+
+## 0x0F 内置函数
+
+
+## 0x10 内置变量
+
+
+## 0x11 键盘键值表
