@@ -97,6 +97,7 @@
 		MsgBox The setting is too high or the wrong color is present.
 	
 保存表达式的结果: 要把结果赋值给变量, 请使用 := 运算符. 例如：
+
 	NetPrice := Price * (1 - Discount/100)
 	
 	
