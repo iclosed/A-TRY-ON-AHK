@@ -40,7 +40,7 @@
 
 ## 0x02 程序执行方式
 
-顺序执行脚本中的代码,
+**顺序执行脚本中的代码**
 
 或者使用热键和热子串：
 
@@ -55,7 +55,16 @@
 
 ## 0x03 调试
 
-调试脚本： 
+通过 DBGp 可以支持调试功能，DGBp 是一种常见的支持多语言和调试器 UI 通信的调试器协议。
+
+>SciTE4AutoHotkey 是一个免费的基于 SciTE 的 AutoHotkey 脚本编辑器. 除了 DBGp 支持, 它还为 AutoHotkey 提供了语法高亮, 调用提示, 参数信息和自动完成, 以及其他拥有的编辑特性和辅助工具.
+
+>>http://www.autohotkey.net/~fincs/SciTE4AutoHotkey_3/web/
+
+>Notepad++ DBGp 插件,一个可作为 Notepad++ 插件使用的 DBGp 客户端. 它设计用于 PHP，不过用于 AutoHotkey 时同样工作地很好。
+
+
+代码调试： 
 
 	ListVars
 	Pause
@@ -112,7 +121,7 @@
 ## 0x06 函数	
 
 	Add(x, y){
-		return x + y   *("Return" 期望 表达式)*
+		return x + y
 	}
 	Var := Add(2, 3)
 	
@@ -160,9 +169,10 @@ for循环:
 
 **For Key [, Value] in Expression**
 
-	; 列出对象中的键值对：
+	;列出对象中的键值对：
 	colours := Object("red", 0xFF0000, "blue", 0x0000FF, "green", 0x00FF00)
-	; 上面的表达式可以直接代替下面的“colours”：
+	
+	;上面的表达式可以直接代替下面的“colours”：
 	for k, v in colours
 		s .= k "=" v "`n"
 	MsgBox % s
