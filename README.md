@@ -58,7 +58,6 @@
 通过 DBGp 可以支持调试功能，DGBp 是一种常见的支持多语言和调试器 UI 通信的调试器协议。
 
 >SciTE4AutoHotkey 是一个免费的基于 SciTE 的 AutoHotkey 脚本编辑器. 除了 DBGp 支持, 它还为 AutoHotkey 提供了语法高亮, 调用提示, 参数信息和自动完成, 以及其他拥有的编辑特性和辅助工具.
-
 >>http://www.autohotkey.net/~fincs/SciTE4AutoHotkey_3/web/
 
 >Notepad++ DBGp 插件,一个可作为 Notepad++ 插件使用的 DBGp 客户端. 它设计用于 PHP，不过用于 AutoHotkey 时同样工作地很好。
